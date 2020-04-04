@@ -34,7 +34,7 @@ def bubble_sort(items):
 def selection_sort(items):
     """Sort given items by finding minimum item, swapping it with first
     unsorted item, and repeating until all items are in sorted order.
-    TODO: Running time: ??? Why and under what conditions?
+    TODO: Running time: O(n^2)
     TODO: Memory usage: ??? Why and under what conditions?"""
     for i in range(0, len(items)-1):
         smallest = i
@@ -45,7 +45,6 @@ def selection_sort(items):
             items[i], items[smallest] = items[smallest], items[i]
     return items
 
-[0,2,4,1]
 def insertion_sort(items):
     """Sort given items by taking first unsorted item, inserting it in sorted
     order in front of items, and repeating until all items are in order.
@@ -54,6 +53,7 @@ def insertion_sort(items):
     for i in range(0, len(items)-1):
         for z in range(i, 0, -1):
             if (items[z] > items[i]) or (z == 0):
-                #push into index
-                #break
+                temp_element = items.remove(items[z])
+                items.insert(i, temp_element])
+                break
     return items
