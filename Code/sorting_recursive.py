@@ -9,6 +9,8 @@ def merge(items1, items2):
     # TODO: Repeat until one list is empty
     # TODO: Find minimum item in both lists and append it to new list
     # TODO: Append remaining items in non-empty list to new list
+    sorted = []
+    
 
 
 def split_sort_merge(items):
@@ -17,6 +19,10 @@ def split_sort_merge(items):
     a list in sorted order.
     TODO: Running time: ??? Why and under what conditions?
     TODO: Memory usage: ??? Why and under what conditions?"""
+    middle = items // 2
+    half_one = bubble_sort(:middle)
+    half_two = bubble_sort(middle:)
+    return merge(half_one, half_two)
     # TODO: Split items list into approximately equal halves
     # TODO: Sort each half using any other sorting algorithm
     # TODO: Merge sorted halves into one list in sorted order

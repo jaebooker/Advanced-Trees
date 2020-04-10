@@ -3,6 +3,8 @@
 #if value is not greater, return false
 #out of loop, return true
 
+#t=20 
+
 def check_sort(sort_array):
     for i in range(0, len(array)):
         if (array[i] > array[i+1]) and (array[i] != array[len(array)]):
